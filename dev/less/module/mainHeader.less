@@ -1,0 +1,61 @@
+.main-header {
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  .top-menu{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    padding: 20px 0;
+    width: 100%;
+    height: 65px;
+    z-index: 2000;
+    text-align: center;
+    .slogan {
+      font-size: 16px;
+    }
+    .navigation-list {
+      li{
+        display: inline-block;
+
+        a{
+          font-size: 18px;
+          color: #fff;
+          padding: 10px 20px;
+          &:hover {
+            background: #126bc5;
+          }
+        }
+      }
+    }
+    .navigation-btn {
+      .eng-btn {
+        text-transform: uppercase;
+        font-size: 18px;
+        position: relative;
+        cursor: pointer;
+        &::before {
+          content: "";
+          background: url('../images/lang-en.png');
+          background-size: cover;
+          width: 30px;
+          height: 21px;
+          position: absolute;
+          top: 0;
+          left: -35px;
+        }
+      }
+      .signIn {
+        background: #e0634f;
+        padding: 10px 20px;
+        font-size: 18px;
+        border-radius: 5px;
+        margin-left: 10%;
+        cursor: pointer;
+        font-weight: bold;
+
+      }
+    }
+  }
+
+}

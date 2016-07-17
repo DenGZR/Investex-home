@@ -1,0 +1,157 @@
+.main-banner {
+  height: 100vh;
+  position: relative;
+  .bg-main-banner {
+    background-image: url('../images/bg-main-banner.jpg');
+    background-color: rgba(0,0,0,0.8);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+  .main-banner-menu {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    .brand-logo {
+      position: relative;
+      margin-left: 30px;
+      .brand-logo-hover {
+        display: none;
+        position: absolute;
+        top: 75px;
+        background: #1168c0;
+        padding: 20px 0;
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+        width: 500px;
+        z-index: 1000;
+        line-height: 18px;
+
+        .menu-up-title {
+          font-weight: bold;
+          margin-top: 10px;
+        }
+        .menu-up-sc {
+          margin-top: 10px;
+          li {
+            display:inline-block;
+          }
+        }
+      }
+      &:hover {
+        .brand-logo-hover {
+          display: block;
+        }
+      }
+    }
+    .navigation-list {
+      font-size: 18px;
+      margin-top: 30px;
+      &>li {
+        display: inline-block;
+        padding: 0 30px 30px 30px;
+      }
+      &>li:hover {
+        &>.navigation-list-item {
+          &>.item-hover {
+            display: block;
+          }
+        }
+      }
+      .navigation-list-item {
+        position: relative;
+        &>a {
+          color: #fff;
+        }
+
+        .item-hover {
+          display: none;
+          position: absolute;
+          border: 1px solid #e8e8e8;
+          border-radius: 5px;
+          top: 30px;
+          width: 275px;
+          background: #fff;
+          text-align: center;
+          z-index: 1000;
+
+          li {
+            border-bottom: 1px solid #e8e8e8;
+            &:last-child {
+              border-bottom: none;
+            }
+            &:hover {
+              a {
+                color: #000;
+              }
+            }
+            a{
+              padding: 10px 0;
+              color: #878787;
+              width: 100%;
+              display: inline-block;
+            }
+          }
+          &::before{
+            content: "";
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            background: #fff;
+            transform: rotate(45deg);
+          }
+        }
+
+      }
+    }
+  }
+  .main-banner-chart {
+    padding-top: 20%;
+    text-align: center;
+    .chart-title {
+      font-size: 32px;
+      font-weight: bold;
+      color: #fff;
+      padding: 10px;
+    }
+    .chart-slogan {
+      font-size: 24px;
+      color: #e0634f;
+      font-weight: bold;
+    }
+    .bg-chart {
+      background: url('../images/bg-chart.png') no-repeat;
+      background-size: 100% 100%;
+      height: 280px;
+      width: 100%;
+      margin: 30px 0;
+    }
+    .chart-btn {
+
+      &>a {
+        padding: 10px 20px;
+        color: #fff;
+        border-radius: 2px;
+        font-size: 16px;
+      }
+      .fx-account-btn {
+        background: #126bc5;
+        border: 2px solid #126bc5;
+        font-weight: bold;
+      }
+      .buy-btn {
+        border: 2px solid #126bc5;
+        margin-left: 5%;
+      }
+      .sell-btn {
+        border: 2px solid #49bb7b;
+      }
+    }
+  }
+}
