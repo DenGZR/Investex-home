@@ -1,18 +1,10 @@
-# React
-
-
+# Investex
 
 ## About
-
 
 ### Uses:
   - gulp
   - webpack
-  - React
-  - Reflux
-  - React-router
-  - React-loader
-  - React-bootstrap
   - CSS : SMACCS + LESS
 
 ### Install
